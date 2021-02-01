@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Exo5</string>
+    <string name="label1">Nom</string>
+    <string name="label2">Prénom</string>
+    <string name="label3">Âge</string>
+    <string name="label4">Domaine de Compétence</string>
+    <string name="label5">Valider</string>
+    <string name="label6">Numéro de Téléphone</string>
+    <string name="DialogTitle">Validation du formulaire</string>
+    <string name="Message">Voulez-vous valider ce formulaire?</string>
+    <string name="Toast">Formulaire Validé</string>
+    <string name="ToastNeg">Formulaire non validé</string>
+</resources>
