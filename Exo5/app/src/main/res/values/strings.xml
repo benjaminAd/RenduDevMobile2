@@ -10,4 +10,7 @@
     <string name="Message">Voulez-vous valider ce formulaire?</string>
     <string name="Toast">Formulaire Validé</string>
     <string name="ToastNeg">Formulaire non validé</string>
+    <string name="OkButton">Ok</string>
+    <string name="retourButton">Retour</string>
+    <string name="buttonAppeler">Appeler</string>
 </resources>
