@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:text="@string/textView1"
+        app:layout_constraintBottom_toBottomOf="@id/editView1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/editView1" />
+
+    <EditText
+        android:id="@+id/editView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:hint="@string/autofill1"
+        android:inputType="text"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@id/textView1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textView2"
+        app:layout_constraintBottom_toBottomOf="@id/editView2"
+        app:layout_constraintRight_toRightOf="@id/textView1"
+        app:layout_constraintTop_toTopOf="@id/editView2" />
+
+    <EditText
+        android:id="@+id/editView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:hint="@string/autofill2"
+        android:inputType="text"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@id/editView1"
+        app:layout_constraintRight_toRightOf="@id/editView1"
+        app:layout_constraintTop_toBottomOf="@id/editView1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

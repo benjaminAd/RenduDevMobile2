@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CalendrierTrain</string>
+    <string name="textView1">Où souhaitez-vous aller?</string>
+    <string name="autofill1">Entrez votre destination</string>
+    <string name="textView2">Votre Point de départ</string>
+    <string name="autofill2">Point de départ</string>
+</resources>
