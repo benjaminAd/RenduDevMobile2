@@ -4,4 +4,8 @@
     <string name="autofill1">Entrez votre destination</string>
     <string name="textView2">Votre Point de départ</string>
     <string name="autofill2">Point de départ</string>
+    <string name="mainButton">Valider</string>
+    <string name="buttonReturn">Retour</string>
+    <string name="depart">Depart : Montpellier</string>
+    <string name="destination">Destinations : Paris, Toulouse</string>
 </resources>
