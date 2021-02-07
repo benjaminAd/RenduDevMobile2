@@ -39,9 +39,6 @@ public class MainActivity3 extends AppCompatActivity {
                 // to handle the case where the user grants the permission. See the documentation
                 // for ActivityCompat#requestPermissions for more details
                 ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CALL_PHONE}, 0);
-                Intent intent1 = new Intent(MainActivity3.this, MainActivity3.class);
-                intent1.putExtra("Numero", textView.getText().toString());
-                startActivity(intent1);
             }
             startActivity(callIntent);
 

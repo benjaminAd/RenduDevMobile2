@@ -22,6 +22,8 @@ public class MainActivity2 extends AppCompatActivity {
     private ListView listView;
     private Button returnButton;
     private TextView Title;
+    private LinearLayout linearLayout;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,7 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         CreateTrajets();
         Intent intent = getIntent();
+        linearLayout = (LinearLayout) findViewById(R.id.mainLayout);
         listView = (ListView) findViewById(R.id.listView);
         returnButton = (Button) findViewById(R.id.returnButton);
         returnButton.setOnClickListener(v -> {
@@ -42,10 +45,17 @@ public class MainActivity2 extends AppCompatActivity {
             String stringTitle = depart + "--" + destination;
             Title = (TextView) findViewById(R.id.TitreTrajet);
             Title.setText(stringTitle);
+            int i = 0;
             for (TrajetTrain t : trajetTrains) {
                 if (t.getDepart().equals(depart) && t.getDestination().equals(destination)) {
                     listTrajets.add(t.toString());
+                    i += 1;
                 }
+            }
+            if (i == 0) {
+                TextView refus = new TextView(this);
+                refus.setText(R.string.refusText);
+                linearLayout.addView(refus);
             }
             ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listTrajets);
             listView.setAdapter(arrayAdapter);
